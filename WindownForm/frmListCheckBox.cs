@@ -19,57 +19,58 @@ namespace WindownForm
 
         private void frmListCheckBox_Load(object sender, EventArgs e)
         {
-            checkListLeft.Items.AddRange(new string[] {"Tuấn","Giang","Hùng" });
+            checkListLeft.Items.AddRange(new string[] { "Tuấn", "Giang", "Hùng" });
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
-            CheckedListBox.CheckedIndexCollection checkedIndex = checkListLeft.CheckedIndices;
-            string strCheck = "";
-            foreach (var i in checkedIndex)
-            {
-
-            }
-            //Hoặc
-            for (int i = 0; i < checkListLeft.Items.Count; i++)
-            {
-                if (checkListLeft.GetItemChecked(i))
-                {
-
-                }
-            }
+            checkListLeft.Items.Add(txtCheckBoxName.Text);
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            CheckedListBox.CheckedItemCollection checkedIndex = checkListLeft.CheckedItems;
-            string strCheck = "";
-            foreach (var i in checkedIndex)
-            {
-
-            }
-        }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void btnMoveToRight_Click(object sender, EventArgs e)
         {
             foreach (int item in checkListLeft.SelectedIndices)
             {
                 checkListRight.Items.Add(checkListLeft.Items[item]);
+                checkListLeft.Items.RemoveAt(item);
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btnMoveAllToRight_Click(object sender, EventArgs e)
+        {
+            checkListRight.Items.AddRange(checkListLeft.Items);
+            checkListLeft.Items.Clear();
+        }
+
+        private void btnMoveToLeft_Click(object sender, EventArgs e)
         {
             foreach (int item in checkListRight.SelectedIndices)
             {
+                checkListLeft.Items.Add(checkListRight.Items[item]);
                 checkListRight.Items.RemoveAt(item);
             }
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btnMoveAllToLeft_Click(object sender, EventArgs e)
         {
-            checkListRight.Items.AddRange(checkListLeft.Items);
-            checkListLeft.Items.Clear();
+            checkListLeft.Items.AddRange(checkListRight.Items);
+            checkListRight.Items.Clear();
+        }
+
+        private void checkListLeft_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //Get index
+            //CheckedListBox.CheckedIndexCollection checkedIndex = checkListLeft.CheckedIndices;
+            //Gettext
+            CheckedListBox.CheckedItemCollection checkedIndex = checkListLeft.CheckedItems;
+            string strCheck = "";
+            if (checkedIndex.Count > 0)
+            {
+                foreach (var i in checkedIndex)
+                {
+                    strCheck += $"Selected : {i}\r\n";
+                }
+                MessageBox.Show(strCheck);
+            }
         }
     }
 }

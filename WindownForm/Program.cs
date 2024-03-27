@@ -16,7 +16,7 @@ namespace WindownForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BasicControl());
+            Application.Run(new Paint());
         }
     }
 }

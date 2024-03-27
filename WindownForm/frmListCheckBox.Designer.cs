@@ -30,169 +30,150 @@ namespace WindownForm
         private void InitializeComponent()
         {
             this.checkListLeft = new System.Windows.Forms.CheckedListBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.checkListRight = new System.Windows.Forms.CheckedListBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.uiSymbolButton1 = new Sunny.UI.UISymbolButton();
-            this.uiSymbolButton2 = new Sunny.UI.UISymbolButton();
-            this.uiSymbolButton3 = new Sunny.UI.UISymbolButton();
-            this.uiSymbolButton4 = new Sunny.UI.UISymbolButton();
+            this.btnMoveToRight = new System.Windows.Forms.Button();
+            this.btnMoveAllToRight = new System.Windows.Forms.Button();
+            this.btnMoveToLeft = new System.Windows.Forms.Button();
+            this.btnMoveAllToLeft = new System.Windows.Forms.Button();
+            this.txtCheckBoxName = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // checkListLeft
             // 
             this.checkListLeft.FormattingEnabled = true;
-            this.checkListLeft.Location = new System.Drawing.Point(12, 12);
+            this.checkListLeft.Location = new System.Drawing.Point(22, 66);
+            this.checkListLeft.Margin = new System.Windows.Forms.Padding(5);
             this.checkListLeft.Name = "checkListLeft";
-            this.checkListLeft.Size = new System.Drawing.Size(131, 184);
+            this.checkListLeft.Size = new System.Drawing.Size(216, 246);
             this.checkListLeft.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(12, 282);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 34);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Index";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.checkListLeft.SelectedIndexChanged += new System.EventHandler(this.checkListLeft_SelectedIndexChanged);
             // 
             // checkListRight
             // 
             this.checkListRight.FormattingEnabled = true;
-            this.checkListRight.Location = new System.Drawing.Point(215, 13);
+            this.checkListRight.Location = new System.Drawing.Point(332, 66);
+            this.checkListRight.Margin = new System.Windows.Forms.Padding(5);
             this.checkListRight.Name = "checkListRight";
-            this.checkListRight.Size = new System.Drawing.Size(131, 184);
+            this.checkListRight.Size = new System.Drawing.Size(216, 246);
             this.checkListRight.TabIndex = 0;
             // 
-            // button2
+            // btnMoveToRight
             // 
-            this.button2.Location = new System.Drawing.Point(12, 242);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 34);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "String";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnMoveToRight.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMoveToRight.ForeColor = System.Drawing.Color.Green;
+            this.btnMoveToRight.Location = new System.Drawing.Point(248, 66);
+            this.btnMoveToRight.Margin = new System.Windows.Forms.Padding(5);
+            this.btnMoveToRight.Name = "btnMoveToRight";
+            this.btnMoveToRight.Size = new System.Drawing.Size(74, 50);
+            this.btnMoveToRight.TabIndex = 1;
+            this.btnMoveToRight.Text = ">";
+            this.btnMoveToRight.UseVisualStyleBackColor = true;
+            this.btnMoveToRight.Click += new System.EventHandler(this.btnMoveToRight_Click);
             // 
-            // button3
+            // btnMoveAllToRight
             // 
-            this.button3.Location = new System.Drawing.Point(174, 242);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 34);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Add";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnMoveAllToRight.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMoveAllToRight.ForeColor = System.Drawing.Color.Red;
+            this.btnMoveAllToRight.Location = new System.Drawing.Point(248, 130);
+            this.btnMoveAllToRight.Margin = new System.Windows.Forms.Padding(5);
+            this.btnMoveAllToRight.Name = "btnMoveAllToRight";
+            this.btnMoveAllToRight.Size = new System.Drawing.Size(74, 50);
+            this.btnMoveAllToRight.TabIndex = 1;
+            this.btnMoveAllToRight.Text = ">>";
+            this.btnMoveAllToRight.UseVisualStyleBackColor = true;
+            this.btnMoveAllToRight.Click += new System.EventHandler(this.btnMoveAllToRight_Click);
             // 
-            // button4
+            // btnMoveToLeft
             // 
-            this.button4.Location = new System.Drawing.Point(93, 242);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 34);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Remove";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnMoveToLeft.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMoveToLeft.ForeColor = System.Drawing.Color.Green;
+            this.btnMoveToLeft.Location = new System.Drawing.Point(248, 196);
+            this.btnMoveToLeft.Margin = new System.Windows.Forms.Padding(5);
+            this.btnMoveToLeft.Name = "btnMoveToLeft";
+            this.btnMoveToLeft.Size = new System.Drawing.Size(74, 50);
+            this.btnMoveToLeft.TabIndex = 1;
+            this.btnMoveToLeft.Text = "<";
+            this.btnMoveToLeft.UseVisualStyleBackColor = true;
+            this.btnMoveToLeft.Click += new System.EventHandler(this.btnMoveToLeft_Click);
             // 
-            // button5
+            // btnMoveAllToLeft
             // 
-            this.button5.Location = new System.Drawing.Point(93, 282);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 34);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "AddAll";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnMoveAllToLeft.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMoveAllToLeft.ForeColor = System.Drawing.Color.Red;
+            this.btnMoveAllToLeft.Location = new System.Drawing.Point(248, 262);
+            this.btnMoveAllToLeft.Margin = new System.Windows.Forms.Padding(5);
+            this.btnMoveAllToLeft.Name = "btnMoveAllToLeft";
+            this.btnMoveAllToLeft.Size = new System.Drawing.Size(74, 50);
+            this.btnMoveAllToLeft.TabIndex = 1;
+            this.btnMoveAllToLeft.Text = "<<";
+            this.btnMoveAllToLeft.UseVisualStyleBackColor = true;
+            this.btnMoveAllToLeft.Click += new System.EventHandler(this.btnMoveAllToLeft_Click);
             // 
-            // uiSymbolButton1
+            // txtCheckBoxName
             // 
-            this.uiSymbolButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiSymbolButton1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiSymbolButton1.Location = new System.Drawing.Point(149, 12);
-            this.uiSymbolButton1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSymbolButton1.Name = "uiSymbolButton1";
-            this.uiSymbolButton1.Size = new System.Drawing.Size(60, 35);
-            this.uiSymbolButton1.Symbol = 61658;
-            this.uiSymbolButton1.SymbolSize = 30;
-            this.uiSymbolButton1.TabIndex = 2;
-            this.uiSymbolButton1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.txtCheckBoxName.Location = new System.Drawing.Point(176, 21);
+            this.txtCheckBoxName.Name = "txtCheckBoxName";
+            this.txtCheckBoxName.Size = new System.Drawing.Size(270, 27);
+            this.txtCheckBoxName.TabIndex = 2;
             // 
-            // uiSymbolButton2
+            // label1
             // 
-            this.uiSymbolButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiSymbolButton2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiSymbolButton2.Location = new System.Drawing.Point(149, 61);
-            this.uiSymbolButton2.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSymbolButton2.Name = "uiSymbolButton2";
-            this.uiSymbolButton2.Size = new System.Drawing.Size(60, 35);
-            this.uiSymbolButton2.Symbol = 61518;
-            this.uiSymbolButton2.TabIndex = 2;
-            this.uiSymbolButton2.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(18, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(152, 21);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Check Box Name :";
             // 
-            // uiSymbolButton3
+            // btnAdd
             // 
-            this.uiSymbolButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiSymbolButton3.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiSymbolButton3.Location = new System.Drawing.Point(149, 112);
-            this.uiSymbolButton3.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSymbolButton3.Name = "uiSymbolButton3";
-            this.uiSymbolButton3.Size = new System.Drawing.Size(60, 35);
-            this.uiSymbolButton3.Symbol = 61657;
-            this.uiSymbolButton3.SymbolSize = 30;
-            this.uiSymbolButton3.TabIndex = 2;
-            this.uiSymbolButton3.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            // 
-            // uiSymbolButton4
-            // 
-            this.uiSymbolButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiSymbolButton4.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiSymbolButton4.Location = new System.Drawing.Point(149, 161);
-            this.uiSymbolButton4.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSymbolButton4.Name = "uiSymbolButton4";
-            this.uiSymbolButton4.Size = new System.Drawing.Size(60, 35);
-            this.uiSymbolButton4.Symbol = 61514;
-            this.uiSymbolButton4.TabIndex = 2;
-            this.uiSymbolButton4.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.DarkCyan;
+            this.btnAdd.Location = new System.Drawing.Point(465, 12);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(83, 43);
+            this.btnAdd.TabIndex = 4;
+            this.btnAdd.Text = "+";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // frmListCheckBox
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(492, 373);
-            this.Controls.Add(this.uiSymbolButton4);
-            this.Controls.Add(this.uiSymbolButton3);
-            this.Controls.Add(this.uiSymbolButton2);
-            this.Controls.Add(this.uiSymbolButton1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(569, 332);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtCheckBoxName);
+            this.Controls.Add(this.btnMoveAllToLeft);
+            this.Controls.Add(this.btnMoveToLeft);
+            this.Controls.Add(this.btnMoveAllToRight);
+            this.Controls.Add(this.btnMoveToRight);
             this.Controls.Add(this.checkListRight);
             this.Controls.Add(this.checkListLeft);
+            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "frmListCheckBox";
             this.Text = "frmListCheckBox";
             this.Load += new System.EventHandler(this.frmListCheckBox_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.CheckedListBox checkListLeft;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.CheckedListBox checkListRight;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private Sunny.UI.UISymbolButton uiSymbolButton1;
-        private Sunny.UI.UISymbolButton uiSymbolButton2;
-        private Sunny.UI.UISymbolButton uiSymbolButton3;
-        private Sunny.UI.UISymbolButton uiSymbolButton4;
+        private System.Windows.Forms.Button btnMoveToRight;
+        private System.Windows.Forms.Button btnMoveAllToRight;
+        private System.Windows.Forms.Button btnMoveToLeft;
+        private System.Windows.Forms.Button btnMoveAllToLeft;
+        private System.Windows.Forms.TextBox txtCheckBoxName;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnAdd;
     }
 }

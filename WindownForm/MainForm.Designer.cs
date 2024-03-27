@@ -38,7 +38,7 @@ namespace WindownForm
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(36, 9);
+            this.label1.Location = new System.Drawing.Point(8, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 21);
             this.label1.TabIndex = 0;
@@ -47,7 +47,7 @@ namespace WindownForm
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(36, 46);
+            this.label2.Location = new System.Drawing.Point(8, 46);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 21);
             this.label2.TabIndex = 0;
@@ -55,14 +55,14 @@ namespace WindownForm
             // 
             // txtUser
             // 
-            this.txtUser.Location = new System.Drawing.Point(132, 6);
+            this.txtUser.Location = new System.Drawing.Point(104, 6);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(172, 27);
             this.txtUser.TabIndex = 1;
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(132, 43);
+            this.txtPass.Location = new System.Drawing.Point(104, 43);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(172, 27);
             this.txtPass.TabIndex = 1;
@@ -71,7 +71,7 @@ namespace WindownForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(567, 229);
+            this.ClientSize = new System.Drawing.Size(285, 87);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.label2);
