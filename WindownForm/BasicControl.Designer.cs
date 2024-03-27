@@ -37,7 +37,6 @@ namespace WindownForm
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtTuoiNV = new System.Windows.Forms.TextBox();
-            this.txtCopy = new System.Windows.Forms.TextBox();
             this.txtAdd = new System.Windows.Forms.TextBox();
             this.btnAddText = new System.Windows.Forms.Button();
             this.rbtnRedColor = new System.Windows.Forms.RadioButton();
@@ -48,14 +47,16 @@ namespace WindownForm
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTime
             // 
             this.lblTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblTime.AutoSize = true;
-            this.lblTime.Location = new System.Drawing.Point(31, 500);
+            this.lblTime.Location = new System.Drawing.Point(12, 507);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(53, 20);
             this.lblTime.TabIndex = 0;
@@ -109,25 +110,18 @@ namespace WindownForm
             this.txtTuoiNV.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtTuoiNV.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtTuoiNV_KeyDown);
             // 
-            // txtCopy
-            // 
-            this.txtCopy.Location = new System.Drawing.Point(904, 292);
-            this.txtCopy.Name = "txtCopy";
-            this.txtCopy.Size = new System.Drawing.Size(152, 26);
-            this.txtCopy.TabIndex = 1;
-            // 
             // txtAdd
             // 
             this.txtAdd.Location = new System.Drawing.Point(35, 212);
             this.txtAdd.Multiline = true;
             this.txtAdd.Name = "txtAdd";
             this.txtAdd.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtAdd.Size = new System.Drawing.Size(312, 181);
+            this.txtAdd.Size = new System.Drawing.Size(430, 181);
             this.txtAdd.TabIndex = 3;
             // 
             // btnAddText
             // 
-            this.btnAddText.Location = new System.Drawing.Point(120, 125);
+            this.btnAddText.Location = new System.Drawing.Point(120, 129);
             this.btnAddText.Name = "btnAddText";
             this.btnAddText.Size = new System.Drawing.Size(101, 41);
             this.btnAddText.TabIndex = 4;
@@ -140,7 +134,7 @@ namespace WindownForm
             // rbtnRedColor
             // 
             this.rbtnRedColor.AutoSize = true;
-            this.rbtnRedColor.Location = new System.Drawing.Point(862, 112);
+            this.rbtnRedColor.Location = new System.Drawing.Point(10, 22);
             this.rbtnRedColor.Name = "rbtnRedColor";
             this.rbtnRedColor.Size = new System.Drawing.Size(100, 24);
             this.rbtnRedColor.TabIndex = 5;
@@ -152,7 +146,7 @@ namespace WindownForm
             // chkFontBold
             // 
             this.chkFontBold.AutoSize = true;
-            this.chkFontBold.Location = new System.Drawing.Point(862, 172);
+            this.chkFontBold.Location = new System.Drawing.Point(10, 82);
             this.chkFontBold.Name = "chkFontBold";
             this.chkFontBold.Size = new System.Drawing.Size(60, 24);
             this.chkFontBold.TabIndex = 6;
@@ -163,7 +157,7 @@ namespace WindownForm
             // rbtnBlueColor
             // 
             this.rbtnBlueColor.AutoSize = true;
-            this.rbtnBlueColor.Location = new System.Drawing.Point(862, 142);
+            this.rbtnBlueColor.Location = new System.Drawing.Point(10, 52);
             this.rbtnBlueColor.Name = "rbtnBlueColor";
             this.rbtnBlueColor.Size = new System.Drawing.Size(102, 24);
             this.rbtnBlueColor.TabIndex = 5;
@@ -175,7 +169,7 @@ namespace WindownForm
             // chkFontItalic
             // 
             this.chkFontItalic.AutoSize = true;
-            this.chkFontItalic.Location = new System.Drawing.Point(862, 202);
+            this.chkFontItalic.Location = new System.Drawing.Point(10, 110);
             this.chkFontItalic.Name = "chkFontItalic";
             this.chkFontItalic.Size = new System.Drawing.Size(64, 24);
             this.chkFontItalic.TabIndex = 6;
@@ -192,6 +186,7 @@ namespace WindownForm
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.txtTenNV);
             this.groupBox1.Controls.Add(this.dtpNgaySinh);
             this.groupBox1.Controls.Add(this.txtTuoiNV);
@@ -201,7 +196,7 @@ namespace WindownForm
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(35, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(312, 184);
+            this.groupBox1.Size = new System.Drawing.Size(430, 184);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ĐĂNG KÝ THI BẰNG LÁI XE";
@@ -221,25 +216,33 @@ namespace WindownForm
             this.groupBox2.ForeColor = System.Drawing.Color.Red;
             this.groupBox2.Location = new System.Drawing.Point(35, 399);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(312, 98);
+            this.groupBox2.Size = new System.Drawing.Size(430, 98);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chú ý";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.rbtnRedColor);
+            this.groupBox3.Controls.Add(this.rbtnBlueColor);
+            this.groupBox3.Controls.Add(this.chkFontItalic);
+            this.groupBox3.Controls.Add(this.chkFontBold);
+            this.groupBox3.Location = new System.Drawing.Point(301, 25);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(118, 145);
+            this.groupBox3.TabIndex = 8;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Theme";
             // 
             // BasicControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(384, 529);
+            this.ClientSize = new System.Drawing.Size(508, 536);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.chkFontItalic);
-            this.Controls.Add(this.chkFontBold);
-            this.Controls.Add(this.rbtnBlueColor);
-            this.Controls.Add(this.rbtnRedColor);
             this.Controls.Add(this.txtAdd);
-            this.Controls.Add(this.txtCopy);
             this.Controls.Add(this.lblTime);
             this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -255,6 +258,8 @@ namespace WindownForm
             this.Load += new System.EventHandler(this.BasicControl_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -268,7 +273,6 @@ namespace WindownForm
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtTuoiNV;
-        private System.Windows.Forms.TextBox txtCopy;
         private System.Windows.Forms.TextBox txtAdd;
         private System.Windows.Forms.Button btnAddText;
         private System.Windows.Forms.RadioButton rbtnRedColor;
@@ -279,5 +283,6 @@ namespace WindownForm
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }

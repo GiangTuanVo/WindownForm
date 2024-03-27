@@ -56,7 +56,7 @@ namespace WindownForm
 
         private void txtTenNV_TextChanged(object sender, EventArgs e)
         {
-            txtCopy.Text = txtTenNV.Text;
+            //txtCopy.Text = txtTenNV.Text;
         }
 
         private void txtTuoiNV_KeyDown(object sender, KeyEventArgs e)
@@ -79,8 +79,7 @@ namespace WindownForm
 
             if (int.TryParse(txtTuoiNV.Text, out int val))
             {
-                txtAdd.AppendText($"{txtTenNV.Text}, {txtTuoiNV.Text} \r\n");
-                //txtAdd.Text = txtAdd.Text + $"{txtTenNV.Text}, {txtTuoiNV.Text} \r\n";
+                txtAdd.AppendText($"{txtTenNV.Text}, {txtTuoiNV.Text}, {dtpNgaySinh.Text} \r\n");
             }
             else
             {
@@ -101,7 +100,7 @@ namespace WindownForm
 
         private void rbtnRedColor_CheckedChanged(object sender, EventArgs e)
         {
-            if(rbtnBlueColor.Checked)
+            if(rbtnRedColor.Checked)
                 txtAdd.ForeColor = Color.Red;
         }
 
