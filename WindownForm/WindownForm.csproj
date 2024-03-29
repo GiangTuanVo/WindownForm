@@ -85,6 +85,12 @@
     <Compile Include="BasicControl.Designer.cs">
       <DependentUpon>BasicControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="CoffeeShop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoffeeShop.Designer.cs">
+      <DependentUpon>CoffeeShop.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmListBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,12 @@
     </Compile>
     <Compile Include="frmListCheckBox.Designer.cs">
       <DependentUpon>frmListCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrder.Designer.cs">
+      <DependentUpon>frmOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -109,18 +121,32 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModelQuanCafe\ListProduct.cs" />
+    <Compile Include="ModelQuanCafe\Product.cs" />
     <Compile Include="Model\SinhVien.cs" />
-    <Compile Include="NhanVien.cs" />
-    <Compile Include="Paint.cs">
+    <Compile Include="Model\NhanVien.cs" />
+    <Compile Include="frmQLNV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Paint.Designer.cs">
-      <DependentUpon>Paint.cs</DependentUpon>
+    <Compile Include="frmQLNV.Designer.cs">
+      <DependentUpon>frmQLNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPainting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPainting.Designer.cs">
+      <DependentUpon>frmPainting.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shop\ListProduct.cs" />
+    <Compile Include="Shop\Product.cs" />
+    <Compile Include="Triangle.cs" />
     <EmbeddedResource Include="BasicControl.resx">
       <DependentUpon>BasicControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoffeeShop.resx">
+      <DependentUpon>CoffeeShop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmListBox.resx">
       <DependentUpon>frmListBox.cs</DependentUpon>
@@ -128,14 +154,20 @@
     <EmbeddedResource Include="frmListCheckBox.resx">
       <DependentUpon>frmListCheckBox.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmOrder.resx">
+      <DependentUpon>frmOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPainting.resx">
+      <DependentUpon>frmPainting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Paint.resx">
-      <DependentUpon>Paint.cs</DependentUpon>
+    <EmbeddedResource Include="frmQLNV.resx">
+      <DependentUpon>frmQLNV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -163,6 +195,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+    <Content Include="Note.txt" />
     <None Include="Resources\Background.png" />
     <None Include="Resources\images.png" />
   </ItemGroup>

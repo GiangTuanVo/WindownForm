@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.34407.143
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindownForm", "WindownForm\WindownForm.csproj", "{FAFA9C7F-88CF-4E9B-B912-0CDCD3F35847}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaintApplicationAssignment", "..\paint-application-csharp\PaintApplicationAssignment.csproj", "{4ED7F6E6-E874-4639-8C14-272BA98F53DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FAFA9C7F-88CF-4E9B-B912-0CDCD3F35847}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAFA9C7F-88CF-4E9B-B912-0CDCD3F35847}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAFA9C7F-88CF-4E9B-B912-0CDCD3F35847}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ED7F6E6-E874-4639-8C14-272BA98F53DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ED7F6E6-E874-4639-8C14-272BA98F53DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ED7F6E6-E874-4639-8C14-272BA98F53DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ED7F6E6-E874-4639-8C14-272BA98F53DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

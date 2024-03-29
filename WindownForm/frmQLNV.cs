@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace WindownForm
 {
-    public partial class Paint : Form
+    public partial class frmQLNV : Form
     {
-        public Paint()
+        public frmQLNV()
         {
             InitializeComponent();
             dtpBirthDay.Format = DateTimePickerFormat.Custom;

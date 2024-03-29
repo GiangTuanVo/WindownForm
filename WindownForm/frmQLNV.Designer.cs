@@ -1,7 +1,7 @@
 ﻿
 namespace WindownForm
 {
-    partial class Paint
+    partial class frmQLNV
     {
         /// <summary>
         /// Required designer variable.

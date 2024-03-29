@@ -1,0 +1,6 @@
+﻿
+Quản lý quán cafe
+Menu :Thêm,Sửa, xoá
+Order theo bàn
+Thanh toán,
+lưu dữ liệu lại

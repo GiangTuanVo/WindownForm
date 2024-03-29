@@ -19,7 +19,7 @@ namespace WindownForm
 
         private void frmListCheckBox_Load(object sender, EventArgs e)
         {
-            checkListLeft.Items.AddRange(new string[] { "Tuấn", "Giang", "Hùng" });
+            checkListLeft.Items.AddRange(new string[] { "Tuấn", "Giang", "Hùng","Dung","Quoc" });
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
