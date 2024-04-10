@@ -18,13 +18,16 @@ namespace WindownForm.ModelQuanCafe
         {
 
         }
+        public Product Copy()
+        {
+            return this.MemberwiseClone() as Product;
+        }
 
-        public Product(int no, string type, string name, int quantity, int price)
+        public Product(int no, string type, string name, int price)
         {
             No = no;
             Type = type;
             Name = name;
-            Quantity = quantity;
             Price = price;
         }
 

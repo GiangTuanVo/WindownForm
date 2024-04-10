@@ -6,13 +6,18 @@ using System.Threading.Tasks;
 
 namespace WindownForm.ModelQuanCafe
 {
-    public class ListProduct
+    public class ListProduct:Product
     {
         public List<Product> Products = new List<Product>();
         public ListProduct()
         {
 
         }
+
+        public ListProduct(int no, string type, string name, int price) : base(no, type, name, price)
+        {
+        }
+
         public void AddProduct(Product product, int amount)
         {
             product.Quantity = amount;

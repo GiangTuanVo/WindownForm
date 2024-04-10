@@ -22,5 +22,4 @@ D:\C Shape\Train\WindownForm\WindownForm\obj\Debug\WindownForm.csproj.AssemblyRe
 D:\C Shape\Train\WindownForm\WindownForm\obj\Debug\WindownForm.frmListBox.resources
 D:\C Shape\Train\WindownForm\WindownForm\obj\Debug\WindownForm.frmPainting.resources
 D:\C Shape\Train\WindownForm\WindownForm\obj\Debug\WindownForm.frmQLNV.resources
-D:\C Shape\Train\WindownForm\WindownForm\obj\Debug\WindownForm.frmOrder.resources
 D:\C Shape\Train\WindownForm\WindownForm\obj\Debug\WindownForm.CoffeeShop.resources

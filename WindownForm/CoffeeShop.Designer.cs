@@ -39,12 +39,10 @@ namespace WindownForm
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtNoSp = new System.Windows.Forms.TextBox();
             this.txtKindSp = new System.Windows.Forms.ComboBox();
             this.txtNameSp = new System.Windows.Forms.TextBox();
-            this.txtQantitySp = new System.Windows.Forms.TextBox();
             this.txtPriceSp = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.btnAddSp = new System.Windows.Forms.Button();
@@ -89,7 +87,7 @@ namespace WindownForm
             this.label1.ForeColor = System.Drawing.Color.Teal;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1238, 45);
+            this.label1.Size = new System.Drawing.Size(1038, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "QUẢN LÝ QUÁN CAFE";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -107,7 +105,7 @@ namespace WindownForm
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1244, 470);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1044, 470);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // tableLayoutPanel2
@@ -124,7 +122,7 @@ namespace WindownForm
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1238, 419);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1038, 419);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // tableLayoutPanel4
@@ -139,7 +137,7 @@ namespace WindownForm
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 210F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(535, 413);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(435, 413);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // groupBox1
@@ -149,7 +147,7 @@ namespace WindownForm
             this.groupBox1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(529, 204);
+            this.groupBox1.Size = new System.Drawing.Size(429, 204);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nhập thông tin sản phẩm";
@@ -166,7 +164,7 @@ namespace WindownForm
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(523, 174);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(423, 174);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
             // tableLayoutPanel6
@@ -177,82 +175,73 @@ namespace WindownForm
             this.tableLayoutPanel6.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.label4, 0, 1);
             this.tableLayoutPanel6.Controls.Add(this.label5, 0, 2);
-            this.tableLayoutPanel6.Controls.Add(this.label6, 0, 3);
-            this.tableLayoutPanel6.Controls.Add(this.label7, 0, 4);
+            this.tableLayoutPanel6.Controls.Add(this.label7, 0, 3);
             this.tableLayoutPanel6.Controls.Add(this.txtNoSp, 1, 0);
             this.tableLayoutPanel6.Controls.Add(this.txtKindSp, 1, 1);
             this.tableLayoutPanel6.Controls.Add(this.txtNameSp, 1, 2);
-            this.tableLayoutPanel6.Controls.Add(this.txtQantitySp, 1, 3);
-            this.tableLayoutPanel6.Controls.Add(this.txtPriceSp, 1, 4);
+            this.tableLayoutPanel6.Controls.Add(this.txtPriceSp, 1, 3);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 5;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(386, 168);
+            this.tableLayoutPanel6.RowCount = 4;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(311, 168);
             this.tableLayoutPanel6.TabIndex = 0;
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(1, 1);
+            this.label3.Location = new System.Drawing.Point(1, 9);
             this.label3.Margin = new System.Windows.Forms.Padding(1);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 23);
+            this.label3.Size = new System.Drawing.Size(81, 23);
             this.label3.TabIndex = 0;
-            this.label3.Text = "STT";
+            this.label3.Text = "Số thứ tự";
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(1, 34);
+            this.label4.Location = new System.Drawing.Point(1, 51);
             this.label4.Margin = new System.Windows.Forms.Padding(1);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 23);
+            this.label4.Size = new System.Drawing.Size(123, 23);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Loại";
+            this.label4.Text = "Loại thức uống";
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(1, 67);
+            this.label5.Location = new System.Drawing.Point(1, 93);
             this.label5.Margin = new System.Windows.Forms.Padding(1);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(36, 23);
+            this.label5.Size = new System.Drawing.Size(118, 23);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Tên";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(1, 100);
-            this.label6.Margin = new System.Windows.Forms.Padding(1);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(78, 23);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Số lượng";
+            this.label5.Text = "Tên thức uống";
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(1, 133);
+            this.label7.Location = new System.Drawing.Point(1, 135);
             this.label7.Margin = new System.Windows.Forms.Padding(1);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 23);
+            this.label7.Size = new System.Drawing.Size(114, 23);
             this.label7.TabIndex = 0;
-            this.label7.Text = "Giá";
+            this.label7.Text = "Giá sản phẩm";
             // 
             // txtNoSp
             // 
             this.txtNoSp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNoSp.Location = new System.Drawing.Point(80, 1);
-            this.txtNoSp.Margin = new System.Windows.Forms.Padding(0);
+            this.txtNoSp.Location = new System.Drawing.Point(128, 5);
             this.txtNoSp.Name = "txtNoSp";
-            this.txtNoSp.Size = new System.Drawing.Size(306, 31);
+            this.txtNoSp.Size = new System.Drawing.Size(180, 31);
             this.txtNoSp.TabIndex = 1;
             this.txtNoSp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -261,42 +250,30 @@ namespace WindownForm
             this.txtKindSp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtKindSp.FormattingEnabled = true;
             this.txtKindSp.Items.AddRange(new object[] {
+            "Nước Ngọt",
             "Cà Phê",
             "Bánh",
             "Trà"});
-            this.txtKindSp.Location = new System.Drawing.Point(80, 39);
-            this.txtKindSp.Margin = new System.Windows.Forms.Padding(0);
+            this.txtKindSp.Location = new System.Drawing.Point(128, 47);
             this.txtKindSp.Name = "txtKindSp";
-            this.txtKindSp.Size = new System.Drawing.Size(306, 31);
+            this.txtKindSp.Size = new System.Drawing.Size(180, 31);
             this.txtKindSp.TabIndex = 2;
             // 
             // txtNameSp
             // 
             this.txtNameSp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNameSp.Location = new System.Drawing.Point(80, 67);
-            this.txtNameSp.Margin = new System.Windows.Forms.Padding(0);
+            this.txtNameSp.Location = new System.Drawing.Point(128, 89);
             this.txtNameSp.Name = "txtNameSp";
-            this.txtNameSp.Size = new System.Drawing.Size(306, 31);
+            this.txtNameSp.Size = new System.Drawing.Size(180, 31);
             this.txtNameSp.TabIndex = 1;
             this.txtNameSp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtQantitySp
-            // 
-            this.txtQantitySp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtQantitySp.Location = new System.Drawing.Point(80, 100);
-            this.txtQantitySp.Margin = new System.Windows.Forms.Padding(0);
-            this.txtQantitySp.Name = "txtQantitySp";
-            this.txtQantitySp.Size = new System.Drawing.Size(306, 31);
-            this.txtQantitySp.TabIndex = 1;
-            this.txtQantitySp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtPriceSp
             // 
             this.txtPriceSp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPriceSp.Location = new System.Drawing.Point(80, 134);
-            this.txtPriceSp.Margin = new System.Windows.Forms.Padding(0);
+            this.txtPriceSp.Location = new System.Drawing.Point(128, 131);
             this.txtPriceSp.Name = "txtPriceSp";
-            this.txtPriceSp.Size = new System.Drawing.Size(306, 31);
+            this.txtPriceSp.Size = new System.Drawing.Size(180, 31);
             this.txtPriceSp.TabIndex = 1;
             this.txtPriceSp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -308,7 +285,7 @@ namespace WindownForm
             this.tableLayoutPanel7.Controls.Add(this.btnRepairSp, 0, 1);
             this.tableLayoutPanel7.Controls.Add(this.btnClearSp, 0, 2);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(395, 3);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(320, 3);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 3;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -316,7 +293,7 @@ namespace WindownForm
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(125, 168);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(100, 168);
             this.tableLayoutPanel7.TabIndex = 1;
             // 
             // btnAddSp
@@ -326,7 +303,7 @@ namespace WindownForm
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAddSp.Location = new System.Drawing.Point(3, 3);
             this.btnAddSp.Name = "btnAddSp";
-            this.btnAddSp.Size = new System.Drawing.Size(119, 50);
+            this.btnAddSp.Size = new System.Drawing.Size(94, 50);
             this.btnAddSp.TabIndex = 0;
             this.btnAddSp.Text = "THÊM";
             this.btnAddSp.UseVisualStyleBackColor = true;
@@ -339,7 +316,7 @@ namespace WindownForm
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRepairSp.Location = new System.Drawing.Point(3, 59);
             this.btnRepairSp.Name = "btnRepairSp";
-            this.btnRepairSp.Size = new System.Drawing.Size(119, 50);
+            this.btnRepairSp.Size = new System.Drawing.Size(94, 50);
             this.btnRepairSp.TabIndex = 0;
             this.btnRepairSp.Text = "SỬA";
             this.btnRepairSp.UseVisualStyleBackColor = true;
@@ -352,7 +329,7 @@ namespace WindownForm
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClearSp.Location = new System.Drawing.Point(3, 115);
             this.btnClearSp.Name = "btnClearSp";
-            this.btnClearSp.Size = new System.Drawing.Size(119, 50);
+            this.btnClearSp.Size = new System.Drawing.Size(94, 50);
             this.btnClearSp.TabIndex = 0;
             this.btnClearSp.Text = "XOÁ";
             this.btnClearSp.UseVisualStyleBackColor = true;
@@ -366,7 +343,7 @@ namespace WindownForm
             this.lstProduct.ItemHeight = 23;
             this.lstProduct.Location = new System.Drawing.Point(3, 213);
             this.lstProduct.Name = "lstProduct";
-            this.lstProduct.Size = new System.Drawing.Size(529, 197);
+            this.lstProduct.Size = new System.Drawing.Size(429, 197);
             this.lstProduct.TabIndex = 1;
             this.lstProduct.SelectedIndexChanged += new System.EventHandler(this.lstProduct_SelectedIndexChanged);
             // 
@@ -378,13 +355,13 @@ namespace WindownForm
             this.tableLayoutPanel8.Controls.Add(this.tableLayoutPanel9, 0, 2);
             this.tableLayoutPanel8.Controls.Add(this.lstOrder, 0, 1);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(700, 3);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(600, 3);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 3;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(535, 413);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(435, 413);
             this.tableLayoutPanel8.TabIndex = 1;
             // 
             // txtTableName
@@ -393,7 +370,7 @@ namespace WindownForm
             this.txtTableName.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTableName.Location = new System.Drawing.Point(3, 3);
             this.txtTableName.Name = "txtTableName";
-            this.txtTableName.Size = new System.Drawing.Size(529, 31);
+            this.txtTableName.Size = new System.Drawing.Size(429, 31);
             this.txtTableName.TabIndex = 0;
             this.txtTableName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -413,7 +390,7 @@ namespace WindownForm
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 1;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(529, 59);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(429, 59);
             this.tableLayoutPanel9.TabIndex = 1;
             // 
             // txtTotalPrice
@@ -422,7 +399,7 @@ namespace WindownForm
             this.txtTotalPrice.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotalPrice.Location = new System.Drawing.Point(243, 6);
             this.txtTotalPrice.Name = "txtTotalPrice";
-            this.txtTotalPrice.Size = new System.Drawing.Size(283, 47);
+            this.txtTotalPrice.Size = new System.Drawing.Size(183, 47);
             this.txtTotalPrice.TabIndex = 0;
             this.txtTotalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -462,7 +439,7 @@ namespace WindownForm
             this.lstOrder.ItemHeight = 23;
             this.lstOrder.Location = new System.Drawing.Point(3, 40);
             this.lstOrder.Name = "lstOrder";
-            this.lstOrder.Size = new System.Drawing.Size(529, 305);
+            this.lstOrder.Size = new System.Drawing.Size(429, 305);
             this.lstOrder.TabIndex = 2;
             // 
             // tableLayoutPanel10
@@ -476,7 +453,7 @@ namespace WindownForm
             this.tableLayoutPanel10.Controls.Add(this.btnCreateTable, 0, 5);
             this.tableLayoutPanel10.Controls.Add(this.btnAddOrder, 0, 4);
             this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(544, 3);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(444, 3);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 7;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -504,10 +481,10 @@ namespace WindownForm
             // 
             this.txtAmout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtAmout.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAmout.Location = new System.Drawing.Point(3, 25);
-            this.txtAmout.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.txtAmout.Location = new System.Drawing.Point(0, 28);
+            this.txtAmout.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.txtAmout.Name = "txtAmout";
-            this.txtAmout.Size = new System.Drawing.Size(144, 31);
+            this.txtAmout.Size = new System.Drawing.Size(150, 31);
             this.txtAmout.TabIndex = 1;
             this.txtAmout.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -515,7 +492,7 @@ namespace WindownForm
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(1, 57);
+            this.label9.Location = new System.Drawing.Point(1, 63);
             this.label9.Margin = new System.Windows.Forms.Padding(1);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(69, 23);
@@ -531,10 +508,10 @@ namespace WindownForm
             "Bàn 01",
             "Bản 02",
             "Bàn 03"});
-            this.cmbTable.Location = new System.Drawing.Point(3, 81);
-            this.cmbTable.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.cmbTable.Location = new System.Drawing.Point(0, 90);
+            this.cmbTable.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.cmbTable.Name = "cmbTable";
-            this.cmbTable.Size = new System.Drawing.Size(144, 31);
+            this.cmbTable.Size = new System.Drawing.Size(150, 31);
             this.cmbTable.TabIndex = 2;
             // 
             // btnCreateTable
@@ -543,9 +520,10 @@ namespace WindownForm
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCreateTable.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateTable.Location = new System.Drawing.Point(3, 175);
+            this.btnCreateTable.Location = new System.Drawing.Point(0, 187);
+            this.btnCreateTable.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.btnCreateTable.Name = "btnCreateTable";
-            this.btnCreateTable.Size = new System.Drawing.Size(144, 54);
+            this.btnCreateTable.Size = new System.Drawing.Size(150, 54);
             this.btnCreateTable.TabIndex = 3;
             this.btnCreateTable.Text = "Tạo Order";
             this.btnCreateTable.UseVisualStyleBackColor = true;
@@ -558,9 +536,10 @@ namespace WindownForm
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAddOrder.Enabled = false;
             this.btnAddOrder.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddOrder.Location = new System.Drawing.Point(3, 115);
+            this.btnAddOrder.Location = new System.Drawing.Point(0, 127);
+            this.btnAddOrder.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.btnAddOrder.Name = "btnAddOrder";
-            this.btnAddOrder.Size = new System.Drawing.Size(144, 54);
+            this.btnAddOrder.Size = new System.Drawing.Size(150, 54);
             this.btnAddOrder.TabIndex = 3;
             this.btnAddOrder.Text = "Thêm Order";
             this.btnAddOrder.UseVisualStyleBackColor = true;
@@ -578,7 +557,7 @@ namespace WindownForm
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1244, 153);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1044, 153);
             this.tableLayoutPanel3.TabIndex = 2;
             // 
             // label2
@@ -598,20 +577,21 @@ namespace WindownForm
             this.layoutTable.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutTable.Location = new System.Drawing.Point(3, 31);
             this.layoutTable.Name = "layoutTable";
-            this.layoutTable.Size = new System.Drawing.Size(1238, 119);
+            this.layoutTable.Size = new System.Drawing.Size(1038, 119);
             this.layoutTable.TabIndex = 1;
             // 
             // CoffeeShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1244, 623);
+            this.ClientSize = new System.Drawing.Size(1044, 623);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CoffeeShop";
             this.Text = "CoffeeShop";
+            this.Load += new System.EventHandler(this.CoffeeShop_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -645,7 +625,6 @@ namespace WindownForm
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.Button btnAddSp;
@@ -656,7 +635,6 @@ namespace WindownForm
         private System.Windows.Forms.TextBox txtNoSp;
         private System.Windows.Forms.ComboBox txtKindSp;
         private System.Windows.Forms.TextBox txtNameSp;
-        private System.Windows.Forms.TextBox txtQantitySp;
         private System.Windows.Forms.TextBox txtPriceSp;
         private System.Windows.Forms.ListBox lstProduct;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;

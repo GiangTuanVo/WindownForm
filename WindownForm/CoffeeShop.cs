@@ -21,12 +21,18 @@ namespace WindownForm
         {
             InitializeComponent();
         }
-
+        private void CoffeeShop_Load(object sender, EventArgs e)
+        {
+            Product product1 = new Product(1, "Nước Ngọt", "Coca", 8000);
+            lstProduct.Items.Add(product1);
+            Product product2 = new Product(2, "Cà Phê", "Cà Phê Đá", 8000);
+            lstProduct.Items.Add(product2);
+        }
         private void btnAddSp_Click(object sender, EventArgs e)
         {
             try
             {
-                Product product = new Product(int.Parse(txtNoSp.Text), txtKindSp.Text, txtNameSp.Text, int.Parse(txtQantitySp.Text), int.Parse(txtPriceSp.Text));
+                Product product = new Product(int.Parse(txtNoSp.Text), txtKindSp.Text, txtNameSp.Text, int.Parse(txtPriceSp.Text));
                 lstProduct.Items.Add(product);
                 ClearAddSP();
             }
@@ -45,7 +51,6 @@ namespace WindownForm
                 product.No = int.Parse(txtNoSp.Text);
                 product.Name = txtNameSp.Text;
                 product.Price = int.Parse(txtPriceSp.Text);
-                product.Quantity = int.Parse(txtQantitySp.Text);
                 product.Type = txtKindSp.Text;
                 //Update nhân viên
                 lstProduct.Items[index] = product;
@@ -56,7 +61,6 @@ namespace WindownForm
             txtNoSp.Text = "";
             txtNameSp.Text = "";
             txtPriceSp.Text = "";
-            txtQantitySp.Text = "";
         }
 
         private void lstProduct_SelectedIndexChanged(object sender, EventArgs e)
@@ -67,7 +71,6 @@ namespace WindownForm
                 txtNoSp.Text = product.No.ToString();
                 txtNameSp.Text = product.Name;
                 txtPriceSp.Text = product.Price.ToString();
-                txtQantitySp.Text = product.Quantity.ToString();
                 txtKindSp.Text = product.Type;
             }
         }
@@ -99,16 +102,9 @@ namespace WindownForm
             if (lstProduct.SelectedIndex != -1 && Versioned.IsNumeric(txtAmout.Text))
             {
                 Product product = lstProduct.SelectedItem as Product;
-
-                Product newProdcut = new Product();
-                newProdcut.Name = product.Name;
-                newProdcut.No = product.No;
-                newProdcut.Price = product.Price;
-                newProdcut.Quantity = product.Quantity;
-                newProdcut.Type = product.Type;
-
-                listProduct.AddProduct(newProdcut, int.Parse(txtAmout.Text));
-                lstOrder.Items.Add(newProdcut);
+                Product newProduct = product.Copy();
+                listProduct.AddProduct(newProduct, int.Parse(txtAmout.Text));
+                lstOrder.Items.Add(newProduct);
                 txtTotalPrice.Text = listProduct.TotalPrice().ToString();
             }
         }
@@ -150,13 +146,15 @@ namespace WindownForm
             listProduct = new ListProduct();
             listProduct = list;
             lstOrder.Items.Clear();
-            
+
             foreach (Product item in listProduct.Products)
             {
                 lstOrder.Items.Add(item);
             }
             txtTotalPrice.Text = listProduct.TotalPrice().ToString();
             txtTableName.Text = button.Text;
+            btnAddOrder.Enabled = true;
+            cmbTable.Text = button.Text;
         }
 
         private void Clear()
@@ -201,5 +199,7 @@ namespace WindownForm
             ClearItem(txtTableName.Text);
             ClearAddSP();
         }
+
+
     }
 }
