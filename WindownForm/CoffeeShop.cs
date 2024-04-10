@@ -101,7 +101,6 @@ namespace WindownForm
                 Product product = lstProduct.SelectedItem as Product;
 
                 Product newProdcut = new Product();
-
                 newProdcut.Name = product.Name;
                 newProdcut.No = product.No;
                 newProdcut.Price = product.Price;
@@ -130,6 +129,7 @@ namespace WindownForm
                         break;
                 }
             }
+            //Tạo bàn
             Button button = new Button()
             {
                 Text = txtTableName.Text,
